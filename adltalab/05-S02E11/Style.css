@@ -1,1 +1,84 @@
+:root{
+  --sys--spacing--track: 8px;
 
+
+  --sys-radius-small: 8px;
+  --sys-radius-medium: 12px;
+  --sys-radius-large: 16px;
+  /* alwater */
+  --sys-font-family-brand: var(--ref-font-family-vazirmatn), var(--ref-font-family-system);
+
+    /* headline - small */
+    --sys-typescale-headline-small-font-family-name: var(--sys-font-family-brand);
+    --sys-typescale-headline-small-font-weight: var(--ref-font-weight-regular);
+    --sys-typescale-headline-small-font-size: 2.4rem;
+    --sys-typescale-headline-small-line-height: 3.2rem;
+    --sys-typescale-headline-small-letter-spacing: 0rem;
+
+    --ref-palette-primary20: 259.8, 59.4%, 28%;
+    --ref-palette-primary40: 257.6, 35%, 47.6%;
+    --ref-palette-primary80: 257.9, 100%, 86.9%;
+
+    --ref-palette-secondary20: 258, 18.2%, 21.6%;
+    --ref-palette-secondary40: 260, 10.3%, 39.8%;
+    --ref-palette-secondary80: 264, 25.8%, 81%;
+
+  
+     /* theme light */
+     --sys-color-primary-hsl: var(--ref-palette-primary40);
+     --sys-color-on-primary-hsl: var(--ref-palette-primary100);
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sys-color-primary-hsl: var(--ref-palette-primary80);
+    --sys-color-on-primary-hsl: var(--ref-palette-primary20);
+
+    --sys-color-secondary-hsl: var(--ref-palette-secondary80);
+    --sys-color-on-secondary-hsl: var(--ref-palette-secondary20);
+  
+
+  }
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sys--spacing--track);
+}
+
+.container .icon-box{
+  flex-grow: 1;
+}
+
+.headline{
+  font-family: var(--sys-typescale-headline-small-font-family-name);
+  font-weight: var(--sys-typescale-headline-small-font-weight);
+  font-size: var(--sys-typescale-headline-small-font-size);
+  letter-spacing: var(--sys-typescale-headline-small-letter-spacing);
+  line-height: var(--sys-typescale-headline-small-line-height);
+}
+.headline alwatr-icon{
+  display: block;
+  margin-bottom: var(--sys--spacing--track);
+  font-size: 1.5em;
+  color: hsl(var(--sys-color-primary-hsl));
+}
+
+.discription{
+
+}
+
+.icon-box{
+  border: 1px solid red;  
+  /* change default inline display */
+  display: block;
+  padding: calc(2*var(--sys--spacing--track));
+  border-radius: var(--sys-radius-medium);
+
+  /* reset all <a> default parameter */
+  color: inherit; /* change defult color [blue] to inherited  [Body] */
+  text-decoration: none; 
+  
+  
+}
