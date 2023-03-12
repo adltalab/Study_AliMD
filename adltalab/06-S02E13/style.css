@@ -55,7 +55,7 @@ body{
   bottom: calc(2*var(--sys-dl));
   
 }
-.fab.small {
+:is.fab.small {
   border-radius: calc(1.5*var(--sys-rad));
   height: 40px;
   width: 40px;
@@ -72,11 +72,15 @@ body{
 .fab:hover{
   background-color: var(--md-sys-color-secondary-container);
   color: var(--md-sys-color-on-secondary-container);
-  box-shadow: var(--md-sys-elevation-4);
+  box-shadow: var(--md-sys-elevation-3);
   /* outline: -webkit-focus-ring-color auto 1px; */
 }
 
-
+.fab:active{
+  background-color:  var(--md-sys-color-tertiary-container);
+  color: var(--md-sys-color-on-tertiary-container);
+  box-shadow: var(--md-sys-elevation-2);
+}
 
 
 
