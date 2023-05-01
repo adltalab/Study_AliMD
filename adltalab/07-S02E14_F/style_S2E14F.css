@@ -1,0 +1,200 @@
+:root {
+  --box-border-radius : 8px;
+
+  --sys-dl: 8px;
+  --sys-rad: 8px;
+
+  --sys-surface-elevation-opacity-1: 0.2;
+  --sys-surface-elevation-opacity-2: 0.14;
+  --sys-surface-elevation-opacity-3: 0.12;
+
+   /* alwater */
+   --sys-font-family-brand: var(--ref-font-family-vazirmatn), var(--ref-font-family-system);
+
+   /* headline - small */
+   --sys-typescale-headline-small-font-family-name: var(--sys-font-family-brand);
+   --sys-typescale-headline-small-font-weight: var(--ref-font-weight-regular);
+   --sys-typescale-headline-small-font-size: 2.4rem;
+   --sys-typescale-headline-small-line-height: 3.2rem;
+   --sys-typescale-headline-small-letter-spacing: 0rem;
+   /* code pen */
+   --h: 33;
+	--s: 90%;
+	--l: 90%;
+}
+
+*{
+  border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  background-color: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-background);
+  padding: calc(2 * var(--sys-dl));
+
+  font-size: 81.25%;
+}
+
+/* new */
+.adl-btn {
+  background-color:  var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+  text-align: center;
+  border-radius: calc(1*var(--sys-rad));
+
+  margin: calc(1 * var(--sys-dl)) right;
+  padding: calc(1 * var(--sys-dl));
+  max-width: calc(20* var(--sys-dl));
+  user-select:none ;
+  font-size: 1.2em;
+ 
+  box-shadow: var(--md-sys-elevation-2);
+}
+
+.adl-btn:hover{
+  background-color: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+  box-shadow: var(--md-sys-elevation-3);
+}
+
+
+
+.adl-btnO.dark {
+  color: rgb(138, 180, 248);
+  background-color: rgb(41, 42, 45);
+  border-color: rgb(95, 99, 104);
+}
+
+.adl-btnO:hover {
+  background-color: rgb(248, 250, 255);
+  border-color: rgb(210, 227, 252);
+}
+
+.adl-btn:active {
+  background-color:  var(--md-sys-color-tertiary-container);
+   
+  color: var(--md-sys-color-on-tertiary-container);
+  box-shadow: var(--md-sys-elevation-2);
+
+  box-shadow:  chrome shadow style
+    /* 0 1px 1px 0 rgba(0, 0, 0, 0.3), */
+    /* 0 3px 6px 2px rgba(0, 0, 0, 0.15) */
+  /* ; */
+}
+
+.adl-btn.dark:hover {
+  background-color: rgb(49, 53, 60);
+  border-color: rgb(95, 99, 104);
+}
+
+/* body{
+  text-align: center;
+} */
+
+/* .darkMode{
+  background-color: rgb(32, 33, 36);
+  padding: 40px 0px;
+  margin: 20px 0px;
+} */
+
+.adl-box{
+  margin: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  box-shadow:
+    0 1px 2px 0 rgba(0, 0, 0, 0.3),
+    0 3px 6px 2px rgba(0, 0, 0, 0.15)
+  ;
+  border-radius: var(--box-border-radius);
+  min-width: 500px;
+  max-width: 700px;
+  background-color: #fff;
+  
+}
+
+.adl-box.dark{
+  color: rgb(232, 234, 237);
+  background-color: rgb(41, 42, 45);
+}
+
+.item1{
+  border-top: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.adl-item{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(240, 240, 240);
+  padding: 15px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 200ms;
+}
+
+.adl-item.dark{
+  border-top-color: rgb(83, 83, 85);
+}
+
+.adl-item:hover{
+  background: rgb(240, 240, 240);
+  border-top-color: rgb(218, 218, 219);
+}
+
+.adl-item.last:hover{
+  /* border-radius:0px 0px var(--box-border-radius) var(--box-border-radius); */
+}
+
+.adl-item.dark:hover{
+  background: rgb(63, 64, 66);
+  border-top-color: rgb(83, 83, 85);
+}
+
+.adl-item.dark.last:hover{
+  border-radius:0px 0px var(--box-border-radius) var(--box-border-radius);
+}
+
+.account-status{
+  font-weight: 400;
+  color: gray;
+}
+
+.account-status.dark{
+  color: rgb(154, 160, 166)
+}
+
+.itemLeft{
+  flex-grow:1;
+  text-align:left;
+}
+
+.adl-avatar{
+  width: 40px;
+  height: 40px;
+  border-radius:50%;
+}
+
+.adl-nameCard{
+  text-align: left;
+  display: flex;
+  align-items:center;
+}
+
